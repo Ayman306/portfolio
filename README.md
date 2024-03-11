@@ -1,2 +1,2 @@
 # portfolio
-Personla portfolio page
+Personal portfolio page
