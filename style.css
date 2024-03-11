@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --background: #161513;
+    --secondar_bg: #222222;
+    --text-secondary: #C5C5C5;
+    --text-muted: #C5C5C5;
+    --exp-text: #8491A0;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 50%;
+}
+
+::-webkit-scrollbar-button {
+    background: #ccc
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #888
+}
+
+::-webkit-scrollbar-thumb {
+    background: #eee
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Define the gradient cursor */
+.cursor-gradient {
+    position: fixed;
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom right, #ff5f6c8d, #ffc3718d); /* Gradient colors */
+    pointer-events: none; /* Ensure cursor doesn't interfere with click events */
+    z-index: 9999; /* Ensure cursor is above other elements */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: var(--background); */
+    font-family: 'Poppins', sans-serif;
+    font-optical-sizing: auto;
+    transition: all .3s ease;
+    background-image: linear-gradient(180deg, #222222, #000000);
+
+}
+
+nav {
+    background-color: var(--secondar_bg);
+    color: white;
+    height: 82px;
+
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 70px;
+    z-index: 99;
+}
+
+/* ul {
+    list-style: none;
+} */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 200px;
+    object-fit: fill;
+    object-position: center;
+}
+
+.navContent {
+    display: flex;
+    padding: 2px 8px;
+    gap: clamp(10px, 5vw, 50px);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.navContent svg {
+    width: 20px;
+}
+
+.main {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 70px;
+    color: white;
+}
+
+.bitmoji {
+    width: 150px;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.content p {
+    color: var(--text-secondary);
+    width: 85%;
+    font-size: 12px;
+    font-weight: 200;
+    margin: auto;
+}
+
+.content h1 {
+    font-weight: bolder;
+    font-size: clamp(2em, 10vw, 50px);
+}
+
+.reality {
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #FF8660, #9A33FF);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.mainBtn {
+    gap: 10px;
+    justify-content: center;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.mainBtn button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+
+}
+
+.mainBtn button:first-child {
+    background-color: white;
+    color: var(--background);
+}
+
+.exp {
+    margin: 40px 0 20px 0px;
+    text-align: center;
+    font-size: clamp(12px, 10vw, 20px);
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.project h1 {
+    background-color: #f3ec78;
+    background-image: linear-gradient(180deg, #FF8660, #D5491D);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.5px;
+    line-height: 48px;
+    font-size: clamp(2em, 10vw, 40px);
+    text-transform: uppercase;
+}
+
+.icon img {
+    height: 30px;
+    object-fit: cover;
+}
+
+.card {
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    color: white;
+}
+
+.cardBlock {
+    border: 1px solid white;
+    border-radius: 10px;
+
+}
+
+.card .cardImg {
+    border-radius: 10px 10px 0px 0px;
+    background-color: var(--secondar_bg);
+    width: 250px;
+}
+
+.cardImg img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cardTitle {
+    justify-content: space-between;
+}
+
+.card .cardTitle div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 10px 10px;
+
+}
+
+.card .cardTitle p {
+    text-transform: uppercase;
+    font-size: 10px;
+    padding-top: 10px;
+    margin-bottom: -10px;
+
+}
+
+.card .cardTitle h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.cardTitle h3 span{
+    font-size: 10px;
+    text-transform: lowercase;
+    font-weight: 200;
+}
+
+.link {
+    margin: 10px;
+}
+
+.cardBlock:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.mainBtn button:hover {
+    background-color: white;
+    color: var(--background);
+    transition: 0.5s ease;
+}
+
+.mainBtn button:first-child:hover {
+    background-color: transparent;
+    color: white;
+    transition: 0.5s ease;
+    border: 1px solid white;
+}
+
+
+.exprs h1 {
+    background-color: #f3ec78;
+    background-image: linear-gradient(180deg, #5BADFF, #1373D1);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 40px;
+    font-size: clamp(2em, 10vw, 40px);
+    text-transform:  uppercase;
+}
+
+.exprsMain {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.expContainer {
+    display: flex;
+    color: white;
+}
+
+.expContainer img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.expDate {
+    font-size: 12px;
+    text-align: right;
+}
+
+.expContainer .headMain {
+    font-size: clamp(1em, 5vw, 20px);
+    font-weight: bold;
+}
+
+.position {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.positionHead {
+    font-size: clamp(1em, 5vw, 18px);
+    color: white;
+}
+
+.position ul,
+.position .desc {
+    color: var(--exp-text);
+}
+
+.position ul {
+    width: 95%;
+    margin: auto;
+}
+footer{
+    background-color: var(--secondar_bg);
+    padding: 2em;
+}
+.footerMain{
+    width: 75%;
+    margin: auto;
+    flex-direction: column;
+    gap: 30px;
+}
+.footerMain h1{
+    color: white;
+}
+.footerMain p{
+    width: 50%;
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+.footerMain a{
+    font-size: 10px;
+    color: var(--text-secondary);
+    font-weight: bold;
+}
+.socialMail{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.social{
+    display: flex;
+    gap: 20px;
+    /* justify-content:  center; */
+    align-items: center;
+}
+.social img , .socialMail img{
+    width: 20px;
+   color: var(--text-muted);
+}
+hr {
+    width: 50%;
+    margin: 40px auto;
+    display: block;
+}
+
+@media (min-width:480px) {
+    .content p {
+        width: 50%;
+    }
+
+}
+
+@media (max-width:540px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .expContainer img {
+        width: 30px;
+    }
+    .exprsMain {
+        width: 95%;
+    }
+
+    .position ul,
+    .position .desc {
+        font-size: 10px;
+    }
+
+    .expDate {
+        font-size: 10px;
+    }
+    .footerMain p{
+        width: 90%;
+    }
+    .footerMain{
+        width: 95%;
+    }
+}
+
+.mt-mb {
+    margin: 40px 0px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-auto {
+    height: auto;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.align-center {
+    align-items: center;
+}
+
+
+.hover-underline-animation {
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(45deg, #FF8660, #9A33FF);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
