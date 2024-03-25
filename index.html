@@ -1,176 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Author: Aymanuddin,
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Author: Aymanuddin,
     Category: Portfolio Explore my portfolio showcasing expertise in full-stack development, specializing in Angular, Node.js, and Express.js. From fintech applications to health service products, discover how I drive results through cutting-edge technology and industry best practices.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./assets/signature (1).png">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
-    <title>Ayman portfolio - software engineer</title>
-</head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./assets/signature (1).png">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+        <title>Ayman portfolio - software engineer</title>
+    </head>
 
-<body>
-    <nav class="navbar d-flex justify-around align-center">
-        <div class="logo">
-            <img src="./assets/signature (1).png" alt="logo" srcset="" loading="lazy"
-                class="w-100 h-auto d-block animate__animated animate__bounceInLeft" />
-        </div>
-        <div>
-            <ul class="navContent">
-                <li onclick="sendEmail()" class="hover-underline-animation d-flex">Hire me <span class="svgIcon d-flex align-center">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#dbdbdb"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 9H17M7 13H17M21 20L17.6757 18.3378C17.4237 18.2118 17.2977 18.1488 17.1656 18.1044C17.0484 18.065 16.9277 18.0365 16.8052 18.0193C16.6672 18 16.5263 18 16.2446 18H6.2C5.07989 18 4.51984 18 4.09202 17.782C3.71569 17.5903 3.40973 17.2843 3.21799 16.908C3 16.4802 3 15.9201 3 14.8V7.2C3 6.07989 3 5.51984 3.21799 5.09202C3.40973 4.71569 3.71569 4.40973 4.09202 4.21799C4.51984 4 5.0799 4 6.2 4H17.8C18.9201 4 19.4802 4 19.908 4.21799C20.2843 4.40973 20.5903 4.71569 20.782 5.09202C21 5.51984 21 6.0799 21 7.2V20Z" stroke="#dbdbdb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                </span></li>
-            </ul>
-
-        </div>
-    </nav>
-    <section>
-        <div class="main d-flex align-center">
-            <div class="bitmoji ">
-                <img src="./assets/Avatar Background.png" alt="Bitmoji" class="w-100 ">
+    <body>
+        <nav class="navbar d-flex justify-around align-center">
+            <div class="logo">
+                <img src="./assets/signature (1).png" alt="logo" srcset="" loading="lazy"
+                    class="w-100 h-auto d-block animate__animated animate__bounceInLeft" />
             </div>
-            <div class="content animate__animated animate__fadeIn">
-                <h1>
-                    Transforming <br> ideas into digital <span class="reality ">reality!</span>
-                </h1>
-                <p>
-                    Unlocking digital potential, where innovation merges with imagination to craft captivating experiences. Fueled by passion for tech and a knack for storytelling, embark on a journey of creativity and code. Let's collaborate and transform ideas into digital reality!
-                </p>
-            </div>
-            <div class="mainBtn animate__animated animate__bounce d-flex align-center">
-                <button onclick="sendEmail()">Get In Touch</button>
-                <button id="downloadCv">Download CV</button>
-            </div>
-        </div>
-    </section>
-    <section class="mt-mb">
-        <p class="exp text-muted">
-            EXPERIENCE WITH
-        </p>
-        <div class="icon">
-            <img src="./assets/mdi_angular.png" alt="angular" srcset="">
-            <img src="./assets/nodejs.png" alt="nodejs" srcset="">
-            <img src="./assets/html.png" alt="html" srcset="">
-            <img src="./assets/javascript.png" alt="javascript" srcset="">
-            <img src="./assets/css.png" alt="css" srcset="">
-        </div>
-    </section>
-    <section class="mt-mb project">
-        <h1 class="mt-mb">Projects</h1>
-        <div class="card d-flex align-center">
-            <div class="cardBlock" onclick="navigateProject('pangaeax')">
-                <div class="cardImg">
-                    <img src="https://res.cloudinary.com/dosuseofq/image/upload/v1710084064/dashboard_xiv0fa.jpg" alt="pangaeax"
-                        srcset="" class="w-100">
-                </div>
-                <div class="cardTitle d-flex align-center">
-                    <div>
-
-                        <p class="text-muted">Click here to visit</p>
-                        <h3>Pangaeax</h3>
-                    </div>
-                    <a href="#" target="blank" class="link"><img src="./assets/View Icon.png" alt="view"></a>
-                </div>
-            </div>
-
-            <div class="cardBlock" onclick="navigateProject('mmj')">
-                <div class="cardImg">
-                    <img src="https://res.cloudinary.com/dosuseofq/image/upload/v1710083776/full-shot-woman-online-fashion-shopping_hcpuec.jpg"
-                        alt="mmj" srcset="" class="w-100">
-                </div>
-                <div class="cardTitle d-flex">
-                    <div>
-
-                        <p class="text-muted">Click here to visit</p>
-                        <h3>MMJ Store <span class="text-muted">(in-progress)</span> </h3>
-                    </div>
-                    <a href="#" target="blank" class="link"><img src="./assets/View Icon.png" alt="view"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="exprsMain">
-        <div class="exprs">
-            <h1>Experience</h1>
-        </div>
-        <p class="text-muted expDate" id="totalExp"></p>
-
-        <div class="expContainer d-flex align-center">
-            <div class="d-flex align-center cursor-pointer " onclick="navigateProject('pace')">
-                <img src="./assets/Logo.webp" alt="pace" srcset="" class=" compIcon">
-                <p class="headMain hover-underline-animation">Pace Wisdom Solution</p>
-            </div>
-        </div>
-        <div class="position ">
-            <p class="text-muted expDate">May 2023 - Present</p>
-            <div class="positionContent">
-            <p class="positionHead">Associate Software Engineer</p>
-            <p class="text-muted desc">As an Associate Software Engineer, I excel as a full-stack developer, proficient in Angular for front-end, Node.js for backend, and Express.js as the backend framework, with MySQL as the database. In my current role, I've contributed to fintech projects, ensuring data security and scalability. Additionally, I'm spearheading the development of a health service product, leveraging my skills in both frontend and backend technologies to create robust and flexible solutions.</p>
-            <br>    
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Utilized Angular to create dynamic and intuitive user interfaces.</li>
-                <li class="list-group-item">Built user-friendly applications for pre-credit score and credit guarantee from scratch.</li>
-                <li class="list-group-item">Collaborated with cross-functional teams to streamline project execution.</li>
-                <li class="list-group-item">Enhanced application performance by optimizing SQL queries.</li>
-                <li class="list-group-item">Implemented industry best practices for code quality and security.</li>
-                <li>Continuously learning and adapting to emerging technologies to stay ahead in the field.                </li>
-                <li>
-                    Technologies used: Angular, Node.js, Express.js, MySQL, PostgreSQL, JavaScript, HTML, CSS, Figma, GitLab.
-                </li>
+            <div>
+                <ul class="navContent">
+                    <li onclick="sendEmail()" class="hover-underline-animation d-flex">Hire me <span
+                            class="svgIcon d-flex align-center">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#dbdbdb">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M7 9H17M7 13H17M21 20L17.6757 18.3378C17.4237 18.2118 17.2977 18.1488 17.1656 18.1044C17.0484 18.065 16.9277 18.0365 16.8052 18.0193C16.6672 18 16.5263 18 16.2446 18H6.2C5.07989 18 4.51984 18 4.09202 17.782C3.71569 17.5903 3.40973 17.2843 3.21799 16.908C3 16.4802 3 15.9201 3 14.8V7.2C3 6.07989 3 5.51984 3.21799 5.09202C3.40973 4.71569 3.71569 4.40973 4.09202 4.21799C4.51984 4 5.0799 4 6.2 4H17.8C18.9201 4 19.4802 4 19.908 4.21799C20.2843 4.40973 20.5903 4.71569 20.782 5.09202C21 5.51984 21 6.0799 21 7.2V20Z"
+                                        stroke="#dbdbdb" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                        </span></li>
                 </ul>
+
             </div>
-            <br>
-            <p class="text-muted expDate">Septeber 2022 - April 2022</p>
-            <div class="positionContent">
-                <p class="positionHead">Trainee Software Engineer</p>
-                <p class="text-muted desc">Immersed myself in learning Angular development, collaborating closely with senior engineers to implement new features and participating in code reviews.</p>
-                <br>    
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Engaged in immersive learning experiences focusing on Angular development, honing skills in building dynamic web applications.</li>
-                    <li class="list-group-item">Collaborated closely with backend developers during the training period.</li>
-                    <li class="list-group-item">Integrated multiple dynamic APIs into the project.</li>
-                    <li class="list-group-item">Built several scalable features to enhance project functionality.</li>
-                    <li class="list-group-item">Enhanced the coding structure and codebase to adhere to industry standards.</li>
-                    <li>
-                        Technologies used : Angular, HTML, CSS, JavaScript, TypeScript, REST APIs, GitLab, Bootstrap, Material UI, Angular Material.
-                    </li>
+        </nav>
+        <section>
+            <div class="main d-flex align-center">
+                <div class="bitmoji ">
+                    <img src="./assets/Avatar Background.png" alt="Bitmoji" class="w-100 ">
+                </div>
+                <div class="content animate__animated animate__fadeIn">
+                    <h1>
+                        Transforming <br> ideas into digital <span class="reality ">reality!</span>
+                    </h1>
+                    <p>
+                        Unlocking digital potential, where innovation merges with imagination to craft captivating
+                        experiences. Fueled by passion for tech and a knack for storytelling, embark on a journey of
+                        creativity and code. Let's collaborate and transform ideas into digital reality!
+                    </p>
+                </div>
+                <div class="mainBtn animate__animated animate__bounce d-flex align-center">
+                    <button onclick="sendEmail()">Get In Touch</button>
+                    <button id="downloadCv">Download CV</button>
+                </div>
+            </div>
+        </section>
+        <section class="mt-mb">
+            <p class="exp text-muted">
+                EXPERIENCE WITH
+            </p>
+            <div class="icon">
+                <img src="./assets/icons8-angular-128.svg" alt="angular" srcset="">
+                <img src="./assets/icons8-html5-128.svg" alt="html" srcset="">
+                <img src="./assets/icons8-css3-128.svg" alt="css" srcset="">
+                <img src="./assets/icons8-typescript-96.png" alt="typescript" srcset="">
+                <img src="./assets/icons8-javascript-128.svg" alt="javascript" srcset="">
+                <img src="./assets/icons8-nodejs-128.svg" alt="nodejs" srcset="">
+                <img src="./assets/icons8-express-js-128.svg" alt="expressJs" srcset="">
+                <img src="./assets/icons8-github-128.svg" alt="github" srcset="">
+                <img src="./assets/icons8-postgresql-144.png" alt="PostgreSQL" srcset="">
+            </div>
+        </section>
+        <section class="mt-mb project">
+            <h1 class="mt-mb">Projects</h1>
+            <div class="card d-flex align-center">
+                <div class="cardBlock" onclick="navigateProject('pangaeax')">
+                    <div class="cardImg">
+                        <img src="https://res.cloudinary.com/dosuseofq/image/upload/v1710084064/dashboard_xiv0fa.jpg"
+                            alt="pangaeax" srcset="" class="w-100">
+                    </div>
+                    <div class="cardTitle d-flex align-center">
+                        <div>
+
+                            <p class="text-muted">Click here to visit</p>
+                            <h3>Pangaeax</h3>
+                        </div>
+                        <a href="#" target="blank" class="link"><img src="./assets/View Icon.png" alt="view"></a>
+                    </div>
+                </div>
+
+                <div class="cardBlock" onclick="navigateProject('mmj')">
+                    <div class="cardImg">
+                        <img src="https://res.cloudinary.com/dosuseofq/image/upload/v1711364842/Jan-Business_team_3_tyqgrc.jpg"
+                            alt="samhita" srcset="" class="w-100">
+                    </div>
+                    <div class="cardTitle d-flex">
+                        <div>
+
+                            <p class="text-muted">Click here to visit</p>
+                            <h3>Samhita.org</h3>
+                        </div>
+                        <a href="#" target="blank" class="link"><img src="./assets/View Icon.png" alt="view"></a>
+                    </div>
+                </div>
+
+                <div class="cardBlock" onclick="navigateProject('mmj')">
+                    <div class="cardImg">
+                        <img src="https://res.cloudinary.com/dosuseofq/image/upload/v1711364834/7317079_cqyobb.jpg"
+                            alt="mmj" srcset="" class="w-100">
+                    </div>
+                    <div class="cardTitle d-flex">
+                        <div>
+
+                            <p class="text-muted">Click here to visit</p>
+                            <h3>Heaps.ai </h3>
+                        </div>
+                        <a href="#" target="blank" class="link"><img src="./assets/View Icon.png" alt="view"></a>
+                    </div>
+                </div>
+
+                <div class="cardBlock" onclick="navigateProject('mmj')">
+                    <div class="cardImg">
+                        <img src="https://res.cloudinary.com/dosuseofq/image/upload/v1710083776/full-shot-woman-online-fashion-shopping_hcpuec.jpg"
+                            alt="mmj" srcset="" class="w-100">
+                    </div>
+                    <div class="cardTitle d-flex">
+                        <div>
+
+                            <p class="text-muted">Click here to visit</p>
+                            <h3>MMJ Store <span class="text-muted">(in-progress)</span> </h3>
+                        </div>
+                        <a href="#" target="blank" class="link"><img src="./assets/View Icon.png" alt="view"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exprsMain">
+            <div class="exprs">
+                <h1>Experience</h1>
+            </div>
+            <p class="text-muted expDate" id="totalExp"></p>
+
+            <div class="expContainer d-flex align-center">
+                <div class="d-flex align-center cursor-pointer " onclick="navigateProject('pace')">
+                    <img src="./assets/Logo.webp" alt="pace" srcset="" class=" compIcon">
+                    <p class="headMain hover-underline-animation">Pace Wisdom Solution</p>
+                </div>
+            </div>
+            <div class="position ">
+                <p class="text-muted expDate">May 2023 - Present</p>
+                <div class="positionContent">
+                    <p class="positionHead">Associate Software Engineer</p>
+                    <p class="text-muted desc">As an Associate Software Engineer, I excel as a full-stack developer,
+                        proficient in Angular for front-end, Node.js for backend, and Express.js as the backend
+                        framework, with MySQL as the database. In my current role, I've contributed to fintech projects,
+                        ensuring data security and scalability. Additionally, I'm spearheading the development of a
+                        health service product, leveraging my skills in both frontend and backend technologies to create
+                        robust and flexible solutions.</p>
+                    <br>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Utilized Angular to create dynamic and intuitive user interfaces.
+                        </li>
+                        <li class="list-group-item">Built user-friendly applications for pre-credit score and credit
+                            guarantee from scratch.</li>
+                        <li class="list-group-item">Collaborated with cross-functional teams to streamline project
+                            execution.</li>
+                        <li class="list-group-item">Enhanced application performance by optimizing SQL queries.</li>
+                        <li class="list-group-item">Implemented industry best practices for code quality and security.
+                        </li>
+                        <li>Continuously learning and adapting to emerging technologies to stay ahead in the field.
+                        </li>
+                        <li>
+                            Technologies used: Angular, Node.js, Express.js, MySQL, PostgreSQL, JavaScript, HTML, CSS,
+                            Figma, GitLab.
+                        </li>
                     </ul>
                 </div>
-            <br>
-            <p class="text-muted expDate">June 2022 - August 2022</p>
-            <div class="positionContent">
-                <p class="positionHead"> Internship</p>
-                <p class="text-muted desc">During my internship at Pace Wisdom Solution, spanning three months, I had the opportunity to collaborate closely with senior software engineers in designing, developing and understanding software development life cycle.</p>
-                <br>    
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Acquired hands-on experience with html css and javascript.</li>
-                    <li class="list-group-item">Gained proficiency in building dynamic and interactive front-end solutions</li>
-                    <li class="list-group-item">Engaged in collaborative code reviews, fostering a culture of continuous improvement and adherence to industry standards.</li>
-                    <li class="list-group-item">Provided valuable insights into the software development lifecycle and equipped me with practical skills essential for my journey as a software engineer.
-                    </li>
-                    <li class="list-group-item">Technologies used : HTML, CSS, SCSS, Javascript, GitHub</li>
+                <br>
+                <p class="text-muted expDate">Septeber 2022 - April 2022</p>
+                <div class="positionContent">
+                    <p class="positionHead">Trainee Software Engineer</p>
+                    <p class="text-muted desc">Immersed myself in learning Angular development, collaborating closely
+                        with senior engineers to implement new features and participating in code reviews.</p>
+                    <br>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Engaged in immersive learning experiences focusing on Angular
+                            development, honing skills in building dynamic web applications.</li>
+                        <li class="list-group-item">Collaborated closely with backend developers during the training
+                            period.</li>
+                        <li class="list-group-item">Integrated multiple dynamic APIs into the project.</li>
+                        <li class="list-group-item">Built several scalable features to enhance project functionality.
+                        </li>
+                        <li class="list-group-item">Enhanced the coding structure and codebase to adhere to industry
+                            standards.</li>
+                        <li>
+                            Technologies used : Angular, HTML, CSS, JavaScript, TypeScript, REST APIs, GitLab,
+                            Bootstrap, Material UI, Angular Material.
+                        </li>
                     </ul>
                 </div>
-        </div>
-        <hr >
-    </section>
-    <footer>
-        <div class="footerMain d-flex">
-            <h1>Contact</h1>
-            <p>Stay Connected! Reach out for collaborations, queries, or just to say hello. Let's create something extraordinary together. Follow along for updates on projects, tech insights, and occasional bursts of humor. Looking forward to connecting with you!</p>
-            <a href="mailto:aymanuddin.se@gmail.com" class="socialMail"><span><img src="./assets/mail.svg" alt="mail" srcset="" ></span> aymanuddin.se@gmail.com</a>
-            <div class="social">
-            <a href="https://github.com/Ayman306"><span><img src="./assets/github.svg" alt="github" ></span></a>
-            <a href="https://www.linkedin.com/in/aymanuddin/"> <span><img src="./assets/linkedin.svg" alt="linkedin" srcset="" ></span> </a>
-            <a href="https://twitter.com/Ayman306_"><span><img src="./assets/x-twitter.svg" alt="twitter" srcset=""></span> </a>
-        </div>
-        </div>
-    </footer>
-</body>
-<script src="script.js"></script>i
+                <br>
+                <p class="text-muted expDate">June 2022 - August 2022</p>
+                <div class="positionContent">
+                    <p class="positionHead"> Internship</p>
+                    <p class="text-muted desc">During my internship at Pace Wisdom Solution, spanning three months, I
+                        had the opportunity to collaborate closely with senior software engineers in designing,
+                        developing and understanding software development life cycle.</p>
+                    <br>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Acquired hands-on experience with html css and javascript.</li>
+                        <li class="list-group-item">Gained proficiency in building dynamic and interactive front-end
+                            solutions</li>
+                        <li class="list-group-item">Engaged in collaborative code reviews, fostering a culture of
+                            continuous improvement and adherence to industry standards.</li>
+                        <li class="list-group-item">Provided valuable insights into the software development lifecycle
+                            and equipped me with practical skills essential for my journey as a software engineer.
+                        </li>
+                        <li class="list-group-item">Technologies used : HTML, CSS, SCSS, Javascript, GitHub</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <footer>
+            <div class="footerMain d-flex">
+                <h1>Contact</h1>
+                <p>Stay Connected! Reach out for collaborations, queries, or just to say hello. Let's create something
+                    extraordinary together. Follow along for updates on projects, tech insights, and occasional bursts
+                    of humor. Looking forward to connecting with you!</p>
+                <a href="mailto:aymanuddin.se@gmail.com" class="socialMail"><span><img src="./assets/mail.svg"
+                            alt="mail" srcset=""></span> aymanuddin.se@gmail.com</a>
+                <div class="social">
+                    <a href="https://github.com/Ayman306"><span><img src="./assets/github.svg" alt="github"></span></a>
+                    <a href="https://www.linkedin.com/in/aymanuddin/"> <span><img src="./assets/linkedin.svg"
+                                alt="linkedin" srcset=""></span> </a>
+                    <a href="https://twitter.com/Ayman306_"><span><img src="./assets/x-twitter.svg" alt="twitter"
+                                srcset=""></span> </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="script.js"></script>
 
 </html>
