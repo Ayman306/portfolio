@@ -18,7 +18,7 @@ function navigateProject(name) {
             window.open('https://samhita.org/', '_blank');
             break;
         case 'mmj':
-            window.open('https://store.mangaloremerijaan.com/', '_blank');  
+            // window.open('https://store.mangaloremerijaan.com/', '_blank');   
             break;
         case 'pace':
             window.open('https://pacewisdom.com/', '_blank');
