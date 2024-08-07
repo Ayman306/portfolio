@@ -1,5 +1,5 @@
 document.getElementById('downloadCv').addEventListener('click', function() {
-    window.open('./assets/Aymanuddin.pdf', '_blank');
+    window.open('./assets/Aymanuddin_Resume.pdf', '_blank');
   });
 
   function sendEmail() {
